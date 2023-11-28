@@ -7,43 +7,20 @@
 </style>
         <main>
             <div class="maincontainer">
-                <div class="banner">
-                    <?php foreach($banner as $bner){
-                        extract($bner);
-                        $img = $img_path.$img;
-                    ?>
-                    <div class="myslide">
-                        <img src="<?= $img?>" >
-                    </div>
-                    <?PHP } ?>
-                    <!-- <div class="myslide">
-                        <img src="./img/banner2.jfif" alt="" srcset="">
-                    </div>
-                    <div class="myslide">
-                        <img src="./img/banner3.jfif" alt="" srcset="">
-                    </div>
-                    <div class="myslide">
-                        <img src="./img/banner4.jfif" alt="" srcset="">
-                    </div>
-                    <div class="myslide">
-                        <img src="./img/banner5.jpg" alt="" srcset="">
-                    </div> -->
-                    <button class="pre" onclick="pre(-1)">&#10094;</button>
-                    <button class="next" onclick="next(1)">&#10095;</button>
-                </div>
+                
             </div>
             <div class="product">
-                <h2>PHỔ BIẾN</h2>
+                <h1>PHỔ BIẾN</h1>
+                <hr>
                 <div class="production">
                     <?php 
-                    foreach ($spnew as $sp) {
+                    foreach ($dssp as $sp) {
                         extract($sp);
 
                         $img = $img_path.$img;
                         $linksp="index.php?act=sanphamct&idsp=".$id;
                     ?>
                     <div class="product-item">
-                        <a href=""></a>
                         <img src="<?= $img?>" alt="">
                         <div class="content">
                             <a href="<?= $linksp?>"><p><?= $name?></p></a>
