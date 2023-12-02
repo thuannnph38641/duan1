@@ -73,7 +73,6 @@
                             <td><?php echo $luotxem; ?></td>
                             <td><?php echo $soBinhLuan; ?></td>
                             <td>
-                                <!-- <a href="index.php?act=suasp&idsp=<?php echo $id; ?>"><input type="button" value="Sửa"></a> -->
                                 <a onclick="return confirm('Bạn có muốn xóa?')" href="index.php?act=delete_binhluan&id=<?php echo $id; ?>"><input type="button" value="Xóa" name="xoasp"></a>
                             </td>
                         </tr>

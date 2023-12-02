@@ -55,5 +55,6 @@
                 <a href="index.php?act=list"><input class="mr20" type="button" value="DANH SÁCH"></a>
             </div>
         </form>
+        
     </div>
 </div>

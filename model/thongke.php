@@ -10,3 +10,11 @@ function load_thongke_sanpham_danhmuc()
             ORDER BY soluong DESC ";
     return pdo_query($sql);
 }
+function load_thongke_doanhthu_ngay() {
+    $sql = "SELECT hoadon.id as mahd, hoadon.ngaydathang AS ngay, COUNT(giohang.soluong) AS soluong, SUM(giohang.thanhtien) AS tong
+            FROM hoadon
+            INNER JOIN giohang ON hoadon.id = giohang.idhoadon               
+            GROUP BY hoadon.id";      
+    $result = pdo_query($sql);
+    return $result;
+}

@@ -14,7 +14,6 @@ function loadall_khachhang_top10()
 function loadall_khachhang($keyw = "", $iddm = 0)
 {
     $sql = "select * from taikhoan where 1";
-    // where 1 tức là nó đúng
     if ($keyw != "") {
         $sql .= " and name like '%" . $keyw . "%'";
     }
@@ -26,7 +25,6 @@ function loadall_khachhang($keyw = "", $iddm = 0)
     return  $listkhachhang;
 }
 
-// 
 function loadone_khachhang($id)
 {
     $sql = "select * from taikhoan where id = $id";
@@ -53,7 +51,7 @@ function updatekh($id, $user, $email, $pass, $address, $tel)
 
 function delete_khachhang($id)
 {
-    $sql = "DELETE FROM `taikhoan` WHERE `taikhoan`.`id` = $id;";
+    $sql = "DELETE FROM taikhoan WHERE id = '$id'";
     pdo_execute($sql);
 }
 

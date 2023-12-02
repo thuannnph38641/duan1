@@ -12,7 +12,162 @@
     <script src="js.js"></script>
     <title>Document</title>
 </head>
+<style>
+    /* CSS cho header */
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
 
+.logo p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* CSS cho form tìm kiếm */
+form {
+  margin-top: 10px;
+}
+
+form input[type="search"] {
+  padding: 5px;
+  width: 200px;
+}
+
+form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* CSS cho phần sản phẩm */
+.product h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.product hr {
+  margin-top: 10px;
+}
+
+.product-item {
+  display: inline-block;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+.product-item .content {
+  margin-top: 10px;
+}
+
+.product-item p {
+  margin: 5px 0;
+}
+
+.product-item button {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* CSS cho phần SẢN PHẨM CÙNG LOẠI */
+.sanpham2 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.sanpham2 hr {
+  margin-top: 10px;
+}
+
+.cungloai {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spcl {
+  flex: 0 0 30%;
+  text-align: center;
+}
+
+.spcl img {
+  width: 100%;
+  height: auto;
+}
+
+.tensp {
+  margin-top: 10px;
+}
+
+.tensp p {
+  margin: 5px 0;
+}
+
+/* CSS cho footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lienhe {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vechungtoi,
+.chinhsach,
+.huongdan {
+  flex: 0 0 25%;
+  margin-bottom: 10px;
+}
+
+.maps img {
+  width: 100%;
+  height: auto;
+}
+
+.apps {
+  margin-top: 10px;
+}
+
+.apps i {
+  margin-right: 10px;
+  color: #333;
+}
+</style>
 <body onload="autoslide()">
     <div class="container">
         <header>
@@ -40,14 +195,13 @@
                 </div>
             </div>
         </header>
-
-  fif" alt="" srcset="">
+        <div class="maincontainer">
+            <main>
                     </div>
                     <div class="myslide">
                         <img src="./img/banner4.jfif" alt="" srcset="">
                     </div>
-                    <div class="myslide">      <main>
-            <div class="maincontainer">
+                    <div class="myslide">      
                 <div class="banner">
                     <div class="myslide">
                         <img src="./img/banner1.jpg" alt="" srcset="">
@@ -56,7 +210,7 @@
                         <img src="./img/banner2.jfif" alt="" srcset="">
                     </div>
                     <div class="myslide">
-                        <img src="./img/banner3.j
+                        <img src="./img/banner3.jfif" alt="" srcset="">
                         <img src="./img/banner5.jpg" alt="" srcset="">
                     </div>
                     <button class="pre" onclick="pre(-1)">&#10094;</button>

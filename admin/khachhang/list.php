@@ -72,7 +72,7 @@
               <td><?php echo $role; ?></td>
               <td>
                 <a href="index.php?act=suakh&idkh=<?php echo $id; ?>"><input type="button" value="Sửa"></a>
-                <a onclick="return confirm('Bạn có muốn xóa?')" href="index.php?act=xoakh&id=<?php echo $id; ?>"><input type="button" value="Xóa" name="xoasp"></a>
+                <a onclick="return confirm('Bạn có muốn xóa?')" href="index.php?act=xoakh&idkh=<?php echo $id; ?>"><input type="button" value="Xóa" name="xoakh"></a>
               </td>
             </tr>
           <?php } ?>

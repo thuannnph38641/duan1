@@ -63,18 +63,3 @@
         }
     }
 
-//     function updatesp($id, $iddm, $tensanpham, $price, $mota, $img)
-// {
-//     // Kiểm tra xem người dùng đã chọn hình ảnh mới hay không
-//     if ($_FILES['img']['name'] != "") {
-//         // Nếu họ đã chọn hình ảnh mới, thực hiện việc tải lên và cập nhật hình ảnh mới
-//         // $new_image = uploadImage(); // Hàm uploadImage() là hàm để tải lên hình ảnh mới
-//         // Thực hiện truy vấn SQL để cập nhật thông tin sản phẩm với đường dẫn hình ảnh mới
-//         $sql = "UPDATE `sanpham` SET `name` = '{$tensanpham}', `price` = '{$price}', `iddm` = '{$iddm}', `mota` = '{$mota}', `img` = '{$img}' WHERE `sanpham`.`id` = '$id' ";
-//         pdo_execute($sql);
-//     } else {
-//         // Nếu họ không chọn hình ảnh mới, sử dụng đường dẫn hình ảnh cũ để cập nhật
-//         $sql = "UPDATE `sanpham` SET `name` = '{$tensanpham}', `price` = '{$price}', `iddm` = '{$iddm}', `mota` = '{$mota}' WHERE `sanpham`.`id` = '$id' ";
-//         pdo_execute($sql);
-//     }
-// }

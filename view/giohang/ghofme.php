@@ -48,11 +48,6 @@
                 }
             }
             ?>
-            
-            <tr>
-                <td colspan="3">Tổng</td>
-                <td colspan="2"><?= $dh['tong'] . '$' ?></td>
-            </tr>
         </table>
     </div>
 </main>

@@ -1,3 +1,8 @@
+<style>
+    .maps img{
+        margin-left: 170px;
+    }
+</style>
 <footer>
             <div class="foot">
                 <div class="lienhe">

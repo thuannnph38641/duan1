@@ -1,6 +1,11 @@
 <?php
-function loadall_danhmuc(){
-    $sql="select * from danhmuc order by id desc";
+function loadall_danhmuc($keywdm = ""){
+    $sql = "SELECT * FROM danhmuc WHERE 1";
+    if ($keywdm != "") {
+        $sql .= " and name like '%" . $keywdm . "%'";
+    }
+    
+    $sql .= " order by id desc";
     $listdanhmuc=pdo_query($sql);
     return  $listdanhmuc;
 }
@@ -15,8 +20,13 @@ function load_ten_dm($iddm){
     }
 }
 
+
 function insert_danhmuc($tendanhmuc)
 {
     $sql = "INSERT INTO `danhmuc` (`name`) VALUES ('$tendanhmuc')";
+    pdo_execute($sql);
+}
+function delete_danhmuc($id){
+    $sql = "delete from danhmuc where id='$id'";
     pdo_execute($sql);
 }

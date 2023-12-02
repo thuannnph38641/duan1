@@ -6,11 +6,6 @@
 </style>
 <?php
 if (is_array($khachhang)) {
-
-    // echo "<pre>";
-    // print_r($khachhang);
-    // die;
-
     extract($khachhang);
 }
 ?>

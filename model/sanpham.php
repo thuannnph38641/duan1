@@ -25,26 +25,6 @@ function loadall_sanpham($keyw = "", $iddm = 0)
     $listsanpham = pdo_query($sql);
     return  $listsanpham;
 }
-// function loadall_sanpham($keyw = "", $iddm = 0)
-// {
-//     $sql = "SELECT *, COUNT(binhluan.id) as soBinhLuan
-//             FROM sanpham 
-//             JOIN binhluan on binhluan.idpro = sanpham.id
-//             WHERE trangthai = 0
-//             GROUP BY sanpham.id
-//             ORDER BY sanpham.id DESC; ";
-//     // where 1 tức là nó đúng
-//     if ($keyw != "") {
-//         $sql .= " and name like '%" . $keyw . "%'";
-//     }
-//     if ($iddm > 0) {
-//         $sql .= " and iddm ='" . $iddm . "'";
-//     }
-//     $sql .= " order by id desc";
-//     $listsanpham = pdo_query($sql);
-//     return  $listsanpham;
-// }
-// 
 function loadone_sanpham($id)
 {
     $sql = "select * from sanpham where id = $id";
@@ -66,30 +46,20 @@ function insert_sanpham($tensanpham, $price, $img, $mota, $iddm)
 
 function updatesp($id, $iddm, $tensanpham, $price, $mota, $img)
 {
-    // Kiểm tra xem người dùng đã chọn hình ảnh mới hay không
+    
     if ($_FILES['img']['name'] != "") {
-        // Nếu họ đã chọn hình ảnh mới, thực hiện việc tải lên và cập nhật hình ảnh mới
-        // $new_image = uploadImage(); // Hàm uploadImage() là hàm để tải lên hình ảnh mới
-        // Thực hiện truy vấn SQL để cập nhật thông tin sản phẩm với đường dẫn hình ảnh mới
         $sql = "UPDATE `sanpham` SET `name` = '{$tensanpham}', `price` = '{$price}', `iddm` = '{$iddm}', `mota` = '{$mota}', `img` = '{$img}' WHERE `sanpham`.`id` = '$id' ";
         pdo_execute($sql);
     } else {
-        // Nếu họ không chọn hình ảnh mới, sử dụng đường dẫn hình ảnh cũ để cập nhật
         $sql = "UPDATE `sanpham` SET `name` = '{$tensanpham}', `price` = '{$price}', `iddm` = '{$iddm}', `mota` = '{$mota}' WHERE `sanpham`.`id` = '$id' ";
         pdo_execute($sql);
     }
 }
 
-// Câu truy vấn xóa cứng
+
 function hard_delete($id)
 {
     $sql = "DELETE FROM `sanpham` WHERE `sanpham`.`id` = $id;";
     pdo_execute($sql);
 }
 
-// Câu truy vấn xóa mềm
-function soft_delete($id)
-{
-    $sql = "UPDATE `sanpham` SET `trangthai` = 1 WHERE `sanpham`.`id` = '$id';";
-    pdo_execute($sql);
-}

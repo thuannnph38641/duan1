@@ -4,6 +4,16 @@
         color: black;
         font-weight: 600;
     }
+    .product-item{
+        border: 1px solid white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .product-item p:nth-child(2) {
+        margin-right: 200px;
+    }
+    .content{
+        margin-left: 20px;
+    }
 </style>
         <main>
             <div class="maincontainer">
@@ -43,7 +53,7 @@
                         $linksp="index.php?act=sanphamct&idsp=".$id;
                     ?>
                     <div class="product-item">
-                        <a href=""></a>
+                        
                         <img src="<?= $img?>" alt="">
                         <div class="content">
                             <a href="<?= $linksp?>"><p><?= $name?></p></a>

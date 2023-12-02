@@ -32,6 +32,7 @@
     }
     h1{
       color: darkcyan;
+      text-align: center;
     }
     .font_title {
       margin-top: -50px;
@@ -44,7 +45,7 @@
 </style>
 <div class="row2">
     <div class="row2 font_title">
-        <h1>THỐNG KÊ SẢN PHẨM TRONG DANH MỤC</h1>
+        <h1>THỐNG KÊ SẢN PHẨM THEO DANH MỤC</h1>
     </div><br>
     <div class="row2 form_content ">
         <form action="#" method="POST">
@@ -57,7 +58,7 @@
                         <th>GIÁ NHỎ NHẤT</th>
                         <th>GIÁ LỚN NHẤT</th>
                         <th>GIÁ TRUNG BÌNH</th>
-                        <th></th>
+                        
                     </tr>
                     <?php 
                     foreach ($ds_thongke as $thongke) {
@@ -67,10 +68,36 @@
                         <td><?php echo $id; ?></td>
                         <td><?php echo $name; ?></td>
                         <td><?php echo $soluong; ?></td>
-                        <td>$ <?php echo $gia_min; ?></td>
-                        <td>$ <?php echo $gia_max; ?></td>
-                        <td>$ <?php echo number_format($gia_avg,2); ?></td>
-                        <td><input type="button" value="Sửa"> <input type="button" value="Xóa"></td>
+                        <td><?php echo $gia_min; ?>$</td>
+                        <td><?php echo $gia_max; ?>$</td>
+                        <td><?php echo number_format($gia_avg,2); ?>$</td>                    
+                    </tr>
+                    <?php }?>
+                </table><BR><BR><BR>
+                <div class="row2 font_title">
+        <h1>THỐNG KÊ HÓA ĐƠN THEO NGÀY</h1>
+    </div><br>
+                <table>
+                    <tr>
+                        
+                        <th>Mã hóa đơn</th>
+                        <th>Ngày</th>
+                        <th>Số lượng</th>
+                        <th> Tổng</th>
+                        
+                        
+                    </tr>
+                    <?php 
+                    foreach ($thongkeds as $tke) {
+                        extract($tke);
+                        ?>
+                    <tr>
+                    <td>#MAM-<?php echo $mahd; ?></td>
+                        <td><?php echo $ngay; ?></td>
+                        <td><?php echo $soluong; ?></td>
+                        
+                        <td><?php echo $tong; ?>$</td>
+                                          
                     </tr>
                     <?php }?>
                 </table>

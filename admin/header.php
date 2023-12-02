@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dự án mẫu</title>
+    <title>Dự án 1</title>
     <link rel="stylesheet" href="../css/admin.css">
     
     
@@ -29,10 +29,10 @@
     border: 0px solid #000;
     padding: 5px;
     height: 33px;
-    width: 800px;
+    width: 1000px;
     position: relative;
     top: -65px;
-    left: 200px;
+    left: 170px;
   
   }
   .header_admin{
@@ -73,7 +73,9 @@ height: 70px;
                     <li><a href="index.php?act=listkh">Khách hàng</a></li>
                     <li><a href="index.php?act=binhluan">Bình luận</a></li>
                     <li><a href="index.php?act=banner">Banner</a></li>
+                    <li><a href="index.php?act=hoadon">Đơn hàng</a></li>
                     <li><a href="index.php?act=thongke">Thống kê</a></li>
+                    
                 </ul>
             </div>
         </header>

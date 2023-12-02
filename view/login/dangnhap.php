@@ -29,12 +29,17 @@
         <input type="password" name="pass" id="" placeholder="Nhập mật khẩu"><br>
        <a href="index.php?act=quenmk">Quên mật khẩu </a><br>
         <input type="submit" value="Đăng Nhâp" name="dangnhap">
+        <?php 
+        if(isset($thong_bao1) && $thong_bao1 != ""){
+            echo $thong_bao1;
+        }
+        ?>
         <p>Bạn chưa có tài khoản <a href="index.php?act=dangky">Đăng ký ngay</a></p>
     </form>
     <?php } else { ?>
     <p>Xin chào: <?php echo $_SESSION['taikhoan']['user']; ?></p>
     <a href="index.php?act=dangxuat"><button>Đăng xuất</button></a>
-    <a href="index.php?act=mygh"><button>Giỏ hang cua toi</button></a>
+    <a href="index.php?act=mygh"><button>Giỏ hàng của tôi</button></a>
     <?php
     if ($_SESSION['taikhoan']['role'] == 1) {
     ?>

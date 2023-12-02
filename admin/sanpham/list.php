@@ -49,7 +49,7 @@
   <div class="row2 form_content ">
     <form action="#" method="POST">
       <div class="row2 mb10 formds_loai">
-        <form action="index.php?act.listsp.php" method="post">
+        <form action="index.php?act=listsp" method="post">
           <input type="text" name="keyw">
           <select name="iddm" id="">
             <option value="0" selected>Tất cả</option>
@@ -59,7 +59,7 @@
               <option value="<?php echo $id; ?>"><?php echo $name; ?></option>
             <?php } ?>
           </select>
-          <input type="submit" name="clickok" value="Tìm kiếm">
+          <input type="submit" name="timkiemsp" value="Tìm kiếm">
         </form>
         <table border="1">
           <tr>
@@ -69,7 +69,6 @@
             <th>GIÁ</th>
             <th>HÌNH ẢNH</th>
             <th>LƯỢT XEM</th>
-            <!-- <th>SỐ BÌNH LUẬN</th> -->
             <th>CHỨC NĂNG</th>
           </tr>
 
@@ -79,7 +78,7 @@
               <td><input type="checkbox" name="" id=""></td>
               <td><?php echo $id; ?></td>
               <td><?php echo $name; ?></td>
-              <td><?php echo $price; ?></td>
+              <td><?php echo $price; ?>$</td>
               <td><img src="../upload/<?php echo $img; ?>" alt="" width="100px" height="100px"></td>
               <!-- <td><?php echo $mota; ?></td> -->
               <td><?php echo $luotxem; ?></td>

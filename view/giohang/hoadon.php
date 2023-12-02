@@ -49,15 +49,15 @@
                     }
                     ?>
                     <tr>
-                        <th>Dơn hàng</th>
+                        <th>Đơn hàng</th>
                     </tr>
                     <tr>
                         <td>
                             <ul>
                                 <li>Cam on ban da dat hang</li>
-                                <li>Ma don hang cua ban la :#MAM-<?= $hoadon['id']?></li>
-                                <li>Ngay dat hang:<?= $hoadon['ngaydathang']?></li>
-                                <li>Tong:<?= $hoadon['tong']?></li>
+                                <li>Mã đơn hàng của bạn là:#MAM-<?= $hoadon['id']?></li>
+                                <li>Ngày đặt hàng:<?= $hoadon['ngaydathang']?></li>
+                                <li>Tổng:<?= $hoadon['tong']?></li>
                             </ul>
                             
                         </td>
@@ -90,7 +90,7 @@
                     </tr>
                     <tr>
 <td>
-    <p><?= $ptttdh ?></p>
+    <p><?= $hoadon['hd_pttt'] ?>-Trả tiền khi nhận hàng</p>
 </td>
                     </tr>
                 </table>

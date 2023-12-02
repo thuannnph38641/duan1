@@ -9,14 +9,14 @@
 .cungloai{
     padding: 0 40px;
     position: relative;
-    right: 50px;
+    right: 30px;
 
 }
 .danhmuc{
     width: 330px;
     position: relative;
-    right: 20px;
     border: 2px solid gray;
+    left: 30PX;
 
 }
 .spdm a{
@@ -26,7 +26,7 @@ font-weight: 600;
 
 }
 </style>
-<h2>SẢN PHẨM CÙNG LOẠI</h2>
+<h2>SẢN PHẨM YÊU THÍCH</h2>
 <hr>
             <DIV class="sanpham2">
                 <div class="cungloai">
@@ -44,41 +44,7 @@ font-weight: 600;
                         </div>
                     </div>
                     <?php } ?>
-                    <!-- <div class="spcl">
-                        <a href=""><img src="./img/chelsea.png" alt="" srcset=""></a>
-                        <div class="tensp">
-                            <p>Tên sản phẩm</p>
-                            <p>Giá</p>
-                        </div>
-                    </div>
-                    <div class="spcl">
-                        <a href=""><img src="./img/bayen.png" alt="" srcset=""></a>
-                        <div class="tensp">
-                            <p>Tên sản phẩm</p>
-                            <p>Giá</p>
-                        </div>
-                    </div>
-                    <div class="spcl">
-                        <a href=""><img src="./img/brenford.png" alt="" srcset=""></a>
-                        <div class="tensp">
-                            <p>Tên sản phẩm</p>
-                            <p>Giá</p>
-                        </div>
-                    </div>
-                    <div class="spcl">
-                        <a href=""><img src="./img/bvb.png" alt="" srcset=""></a>
-                        <div class="tensp">
-                            <p>Tên sản phẩm</p>
-                            <p>Giá</p>
-                        </div>
-                    </div>
-                    <div class="spcl">
-                        <a href=""><img src="./img/roma.png" alt="" srcset=""></a>
-                        <div class="tensp">
-                            <p>Tên sản phẩm</p>
-                            <p>Giá</p>
-                        </div>
-                    </div> -->
+                   
                 </div>
                 <div class="danhmuc">
                     <div class="spdm">

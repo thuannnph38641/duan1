@@ -41,6 +41,11 @@
     border-radius: 5px;
     padding: 10px 20px;
   }
+  .form2 input:nth-child(1){
+    width: 200px;
+    background-color: white !important;
+    color: black;
+  }
 </style>
 <div class="row2">
   <div class="row2 font_title">
@@ -49,6 +54,13 @@
   <div class="row2 form_content ">
     <form action="#" method="POST">
       <div class="row2 mb10 formds_loai">
+        <br><div class="form2">
+        <form action="index.php?act=loaihang" method="post">
+          <input type="text" name="keywdm">
+          
+          <input type="submit" name="timkiemdm" value="Tìm kiếm">
+        </form>
+        </div>
       <br>
         <table border="1">
           <tr>
@@ -65,8 +77,7 @@
               <td><?php echo $id; ?></td>
               <td><?php echo $name; ?></td>
               <td>
-                <a href="index.php?act=suasp&idsp=<?php echo $id;?>"><input type="button" value="Sửa"></a>
-                <a onclick="return confirm('Bạn có muốn xóa?')" href="index.php?act=xoa&id=<?php echo $id;?>"><input type="button" value="Xóa" name="xoasp"></a>
+                <a onclick="return confirm('Bạn có muốn xóa?')" href="index.php?act=xoadm&iddm=<?php echo $id;?>"><input type="button" value="Xóa" name="xoadm"></a>
               </td>
             </tr>
           <?php } ?>

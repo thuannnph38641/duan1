@@ -7,11 +7,6 @@
 <?php
 if (is_array($sanpham)) {
     extract($sanpham);
-
-    // echo "<pre>";
-    // print_r($sanpham);
-    // die;
-
 }
 
 $hinhpath = "../upload/" . $img;
@@ -77,9 +72,9 @@ if (is_file($hinhpath)) {
             <hr>
             <br>
             <div class="row mb10 ">
-                <input type="hidden" name="id"                      value="<?php echo $id; ?>">
-                <input type="submit" class="mr20"   name="capnhat"  value="Cập nhật">
-                <input type="reset"  class="mr20"                   value="NHẬP LẠI">
+                <input type="hidden" name="id" value="<?php echo $id; ?>">
+                <input type="submit" class="mr20" name="capnhat"  value="Cập nhật">
+                <input type="reset"  class="mr20"   value="NHẬP LẠI">
                 <a href="index.php?act=list">
                     <input class="mr20" type="button" value="DANH SÁCH">
                 </a>

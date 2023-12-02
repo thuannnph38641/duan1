@@ -1,6 +1,16 @@
 <style>
     td{
         padding: 0 40px;
+       position: relative;
+       
+       top: 20px;
+    }
+    table th{
+        border: 1px solid white;
+        position: relative;
+        padding: 0 40px;
+       
+       
     }
     .contentanh form input{
         width: 180px;
@@ -12,11 +22,26 @@
         color: white;
 
     }
+    .contentanh form input:nth-child(5){
+        width: 70px;
+        background-color: white;
+        color: black;
+        text-align: center;
+        position: relative;
+        top: -22px;
+    }
+    .contentanh form input:nth-child(8){
+        position: relative;
+        top: -30px;
+    }
     .sp-content-item>a{
         text-decoration: none;
         color: blue !important;
         font-size: 18px;
         font-weight: 600;
+    }
+    .binhluan{
+        width: 500px;
     }
 </style>
 <main>
@@ -36,13 +61,15 @@
                     <div class="contentanh">
                         <p><?= $name ?></p>
                         <p><?= 'Giá:'. $price.'$' ?></p>
-                        <p><?= $mota ?></p>
+                        <p><?= $mota ?></p><br><br>
+                        Số lượng:
                         <form action="index.php?act=addgiohang" method="post" enctype="multipart/form-data">
                             <input type="hidden" name="id" value="<?= $id ?>">
                             <input type="hidden" name="name" value="<?= $name ?>">
                             <input type="hidden" name="img" value="<?= $img ?>">
                             <input type="hidden" name="price" value="<?= $price ?>">
-                            <input type="submit" name="themgiohang" value="Them vao gio hang">
+                            <input type="number" name="soluong" value="1" min = 1> <br><br>
+                            <input type="submit" name="themgiohang" value="Thêm vào giỏ hàng">
                         </form>
                     </div>
 
@@ -105,10 +132,15 @@
                     </div>
                 </div>
             </div>
-            <h4>Bình Luận</h4>
+            <h4>Bình Luận/Đánh Giá</h4>
             <div class="binhluan">
                 <div class="userbl">
                 <table>
+                    <tr>
+                        <th>USER</th>
+                        <th>NỘI DUNG</th>
+                        <th>NGÀY</th>
+                    </tr>
                     <?php foreach($binhluan as $value): ?>
                     <tr>
                     <td><?php echo $value['user']?></td>
