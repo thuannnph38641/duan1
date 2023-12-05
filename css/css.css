@@ -208,7 +208,7 @@ footer{
 }
 .lienhe>div{
     margin:20px 30px;
-    color: aqua;
+    color: white;
 }
 .lienhe>div>p:hover{
     color: blue     ;
@@ -216,13 +216,13 @@ footer{
 .maps>img{
     width: 500px;
     height: 300px;
-    margin-left: 50px;
+    margin-left: 80px;
 }
 .apps{
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
-    top: -180px;
+    top: -150px;
     
 }
 .apps>i{

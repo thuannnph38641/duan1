@@ -53,6 +53,12 @@
   font-family: "Times New Roman", serif;
   border-radius: 100px;
 }
+.icon{
+ margin-left: 40px;
+}
+.menu{
+  margin-left: 30px;
+}
 
 </style>
 
@@ -69,7 +75,7 @@
                         <li><a href="">Liên Hệ</a></li>
                         <li><a href="">Blog</a></li>
                         <li><a href="">Giới Thiệu</a></li>
-                        <li><a href="">Đặt Đồ</a></li>
+                        
                     </ul>
                 </DIV>
                 <form action="index.php?act=sanpham" method="post">

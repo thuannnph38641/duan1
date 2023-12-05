@@ -10,6 +10,7 @@
     padding: 0 40px;
     position: relative;
     right: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 .danhmuc{
@@ -19,12 +20,24 @@
     left: 30PX;
 
 }
+.spdm{
+    margin-top: 15px;
+}
+h3{
+    margin-top: -10px;
+}
 .spdm a{
 text-decoration: none;
-font-size: 20px;
+font-size: 16px;
 font-weight: 600;
+color: blue;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 
 }
+h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 </style>
 <h2>SẢN PHẨM YÊU THÍCH</h2>
 <hr>

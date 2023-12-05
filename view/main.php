@@ -3,6 +3,10 @@
         text-decoration: none;
         color: black;
         font-weight: 600;
+        font-size: 16px;
+    }
+    .product-item a:hover{
+        text-decoration: underline;
     }
     .product-item{
         border: 1px solid white;
@@ -13,6 +17,9 @@
     }
     .content{
         margin-left: 20px;
+    }
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 </style>
         <main>

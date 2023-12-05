@@ -39,6 +39,7 @@
 </style>
 <main>
             <div class="hoadon">
+                <h1>HÓA ĐƠN</h1>
                 <table>
                 </table>
                 <table>
@@ -57,7 +58,7 @@
                                 <li>Cam on ban da dat hang</li>
                                 <li>Mã đơn hàng của bạn là:#MAM-<?= $hoadon['id']?></li>
                                 <li>Ngày đặt hàng:<?= $hoadon['ngaydathang']?></li>
-                                <li>Tổng:<?= $hoadon['tong']?></li>
+                                <li>Tổng:<?= $hoadon['tong']?>$</li>
                             </ul>
                             
                         </td>

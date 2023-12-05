@@ -4,6 +4,9 @@
         color: black;
         font-weight: 600;
     }
+    h1{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 </style>
         <main>
             <div class="maincontainer">
@@ -11,7 +14,7 @@
             </div>
             <div class="product">
                 <h1>PHỔ BIẾN</h1>
-                <hr>
+                
                 <div class="production">
                     <?php 
                     foreach ($dssp as $sp) {

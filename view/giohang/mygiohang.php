@@ -88,7 +88,7 @@ font-weight: 600;
 
         $xoagh = '<a href="index.php?act=xoagh&idgh='.$i.'"><input type="button" value="Xóa" width="40px" height="25px"></a>';
         $i += 1;
-        $thanhtien = $gh[3] * $gh[4];
+        $thanhtien = intval($gh[3]) * intval($gh[4]);
        
       ?>
         <tr>

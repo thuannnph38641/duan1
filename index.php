@@ -120,7 +120,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
             }
             include "view/login/quenmk.php";
             break;
-            case 'addgiohang':
+         case 'addgiohang':
                 if (isset($_POST['themgiohang']) && $_POST['themgiohang']) {
                     $id = $_POST['id'];
                     $name = $_POST['name'];
@@ -176,7 +176,7 @@ if (isset($_GET['act']) && ($_GET['act'] != "")) {
                 }
                 include 'view/giohang/thongtindonhang.php';
                 break;
-            
+
                 case 'hoadon':
                     if (isset($_POST['dongydathang']) && $_POST['dongydathang']) {
                         $name = $_POST['name'];

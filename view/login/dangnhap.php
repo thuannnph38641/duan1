@@ -1,14 +1,19 @@
 <style>
 .form1 a>button {
-    background-color: red !important;
+   
     margin-top:20px;
     width: 150px;
-    height: 30px;
+    height: 40px;
     border: 1px solid gainsboro !important;
     border-radius: 5px;
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.form1 a>button:hover{
+    background-color: red;
 }
 .form1 input:nth-child(12){
     width: 100px !important;
@@ -17,6 +22,7 @@
     border: 1px solid gray !important;
     border-radius: 5px;
 }
+
 </style>
 
 <div class="form1">

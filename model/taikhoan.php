@@ -10,13 +10,7 @@
         return $taikhoan;
     }
 
-    function dangxuat() {
-        if (isset($_SESSION['user'])) {
-            unset($_SESSION['user']);
-            session_destroy();
-        }
-    }
-
+  
     function sendMail($email) {
         $sql="SELECT * FROM taikhoan WHERE email='$email'";
         $taikhoan = pdo_query_one($sql);
@@ -24,7 +18,7 @@
         if ($taikhoan != false) {
             sendMailPass($email, $taikhoan['user'], $taikhoan['pass']);
             
-            return "gui email thanh cong";
+            return "Gửi email thành công";
         } else {
             return "Email bạn nhập ko có trong hệ thống";
         }

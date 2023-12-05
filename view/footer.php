@@ -23,7 +23,7 @@
                     <div class="huongdan">
                         <P>HƯỚNG DẪN</P>
                         <p>Hướng dẫn mua hàng</p>
-                        <p>Hongws dẫn thanh toán</p>
+                        <p>Hướng dẫn thanh toán</p>
                         <p>Hướng dẫn đổi trả</p>
                     </div>
                     <div class="maps">

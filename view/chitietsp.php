@@ -33,6 +33,7 @@
     .contentanh form input:nth-child(8){
         position: relative;
         top: -30px;
+        co
     }
     .sp-content-item>a{
         text-decoration: none;
@@ -42,6 +43,13 @@
     }
     .binhluan{
         width: 500px;
+    }
+    .sp-content-item a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .anhct>img{
+        border-radius: 10px;
+        
     }
 </style>
 <main>
